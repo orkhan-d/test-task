@@ -3,7 +3,7 @@ from db.base import db
 
 
 def create_user(name: str,
-                commission: str,
+                commission: float,
                 webhook_url: str,
                 balance: float = 0.0):
     user = User(name=name,
